@@ -1,0 +1,15 @@
+{
+  "name": "react-casino-roulette-example",
+  "homepage": ".",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "NODE_ENV=production webpack"
+  },
+  "dependencies": {
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom",
+    "react-casino-roulette": "file:.."
+  }
+}

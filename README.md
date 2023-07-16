@@ -19,6 +19,10 @@ _That's like selling. Fewer clicks mean more purchases. Faster loading speed lea
 Live example - [react-casino-roulette.ivanadmaers.com](https://react-casino-roulette.ivanadmaers.com)  
 Another one - [codesandbox.io/s/react-casino-roulette-example-ksw8u4](https://codesandbox.io/s/react-casino-roulette-example-ksw8u4)
 
+> If you need the same functionality, plus 2 supported types (American and European roulette), and plain CSS and JS implementation, take a look at - https://github.com/IvanAdmaers/casino-roulette. 
+
+> Please, pay your attention, some of the bet types names (STRAIGHT_UP, CORNER, etc) you receive when handeling user's bet may be incorrect. Everything else works great. It's fixed in https://github.com/IvanAdmaers/casino-roulette.
+
 [![React Casino Roulette](https://i.imgur.com/XXEKNRe.pngs)](https://react-casino-roulette.ivanadmaers.com)
 
 ## Features

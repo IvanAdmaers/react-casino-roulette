@@ -132,6 +132,7 @@ Where * means required
 | winningBet* | `string` | - | Sets the wheel winning bet. Available values: -1, 0, 00 and 1 - 36 |
 | onSpinningEnd | `() => void` | () => undefined | Triggers when the wheel stops spinning |
 | withAnimation | `boolean` | true | Sets should the wheel plays rotating animation |
+| addRest | `boolean` | true | Adds an animation of the ball shifting after the end of the spinning  |
 
 ---
 

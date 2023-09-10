@@ -18,6 +18,7 @@ export interface IRouletteWheelProps {
   winningBet: (typeof availableWinningBets)[number];
   onSpinningEnd?: () => void;
   withAnimation?: boolean;
+  addRest: boolean;
 }
 
 export const RouletteWheel: FC<IRouletteWheelProps> = ({
@@ -25,6 +26,7 @@ export const RouletteWheel: FC<IRouletteWheelProps> = ({
   winningBet,
   onSpinningEnd,
   withAnimation,
+  addRest = true,
 }) => {
   const [wheelNumbers, setWheelNumbers] = useState<string[]>([]);
 
@@ -40,7 +42,11 @@ export const RouletteWheel: FC<IRouletteWheelProps> = ({
     if (winningBet === '-1' || currentInnerRef === null || start === false) {
       return;
     }
-    currentInnerRef.classList.remove('rest');
+
+    if (addRest === true) {
+      currentInnerRef.classList.remove('rest');
+    }
+
     currentInnerRef.removeAttribute('data-spintoindex');
 
     const betIndex = wheelNumbers.indexOf(winningBet);
@@ -49,7 +55,10 @@ export const RouletteWheel: FC<IRouletteWheelProps> = ({
       currentInnerRef.setAttribute('data-spintoindex', `${betIndex}`);
 
       setTimeout(() => {
-        currentInnerRef.classList.add('rest');
+        if (addRest === true) {
+          currentInnerRef.classList.add('rest');
+        }
+
         onSpinningEnd?.();
       }, 9000);
     }, 100);

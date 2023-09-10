@@ -18,7 +18,7 @@ export interface IRouletteWheelProps {
   winningBet: (typeof availableWinningBets)[number];
   onSpinningEnd?: () => void;
   withAnimation?: boolean;
-  addRest: boolean;
+  addRest?: boolean;
 }
 
 export const RouletteWheel: FC<IRouletteWheelProps> = ({
@@ -26,7 +26,7 @@ export const RouletteWheel: FC<IRouletteWheelProps> = ({
   winningBet,
   onSpinningEnd,
   withAnimation,
-  addRest = true,
+  addRest,
 }) => {
   const [wheelNumbers, setWheelNumbers] = useState<string[]>([]);
 
@@ -100,4 +100,5 @@ export const RouletteWheel: FC<IRouletteWheelProps> = ({
 RouletteWheel.defaultProps = {
   onSpinningEnd: () => undefined,
   withAnimation: true,
+  addRest: true,
 };

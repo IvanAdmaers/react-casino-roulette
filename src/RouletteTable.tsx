@@ -12,8 +12,8 @@ import config from './constants/table.json'
 import { classNames } from './utils/class-structurer'
 import { hasOwn } from './utils/hasOwn'
 
-import { RouletteTableContext } from '~/context/RouletteTableContext'
-import './RouletteTable.css'
+import { RouletteTableContext } from './context/RouletteTableContext'
+import './styles/RouletteTable.css'
 
 export interface IOnBetParams {
   bet: keyof typeof ACTION_TYPES

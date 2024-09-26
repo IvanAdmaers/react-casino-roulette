@@ -1,7 +1,7 @@
 import { useContext, type FC } from 'react'
 
-import { RouletteTableContext } from '~/context/RouletteTableContext'
 import { ACTION_TYPES } from '../constants/action-types'
+import { RouletteTableContext } from '../context/RouletteTableContext'
 import { findChipIcon } from '../helpers/findChipIcon'
 import { shouldRenderChip } from '../helpers/shouldRender'
 import { Chip } from './poker-chip'

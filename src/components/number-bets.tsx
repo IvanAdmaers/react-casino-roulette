@@ -1,8 +1,8 @@
 import { useContext, type FC } from 'react'
 
-import { RouletteTableContext } from '~/context/RouletteTableContext'
 import { ACTION_TYPES } from '../constants/action-types'
 import config from '../constants/table.json'
+import { RouletteTableContext } from '../context/RouletteTableContext'
 import { findChipIcon } from '../helpers/findChipIcon'
 import {
   shouldRenderBottomCatcher,

@@ -2,9 +2,9 @@ import type { FC, MouseEvent } from 'react'
 import { useCallback, useEffect, useMemo, useRef } from 'react'
 
 import { BottomBets } from './components/bottom-bets'
-import { Columns } from './components/columns'
-import { Dozens } from './components/dozens'
 import { NumberBets } from './components/number-bets'
+import { Columns } from './components/table-columns'
+import { Dozens } from './components/table-dozens'
 import { ZeroBets } from './components/zero-bets'
 
 import { ACTION_TYPES } from './constants/action-types'

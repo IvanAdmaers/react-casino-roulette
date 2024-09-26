@@ -1,8 +1,29 @@
 {
-  "name": "roulette",
-  "private": true,
-  "version": "0.0.0",
+  "name": "tw-roulette",
+  "private": false,
+  "version": "1.0.0",
+  "keywords": [
+    "roulette",
+    "roulette wheel",
+    "gambling",
+    "board",
+    "roulette board"
+  ],
+  "description": "This is a small package based off react-casino-roulette that removes the wheel and adds tailwind support.",
+  "license": "MIT",
+  "author": "Ethan Ogle",
   "type": "module",
+  "main": "dist/index.js",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -34,5 +55,8 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

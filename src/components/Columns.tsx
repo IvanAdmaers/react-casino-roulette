@@ -4,7 +4,7 @@ import { RouletteTableContext } from '~/context/RouletteTableContext'
 import { ACTION_TYPES } from '../constants/action-types'
 import { findChipIcon } from '../helpers/findChipIcon'
 import { shouldRenderChip } from '../helpers/shouldRender'
-import { Chip } from './Chip'
+import { Chip } from './poker-chip'
 
 export const Columns: FC = () => {
   const { onBetCatcherHover, bets } = useContext(RouletteTableContext)

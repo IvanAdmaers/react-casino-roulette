@@ -14,7 +14,7 @@ import {
   shouldRenderTopRightDoubleStreetCatcher,
   shouldRenderTopStreetCatcher,
 } from '../helpers/shouldRender'
-import { Chip } from './Chip'
+import { Chip } from './poker-chip'
 
 export const NumberBets: FC = () => {
   const { onBetCatcherHover, bets } = useContext(RouletteTableContext)

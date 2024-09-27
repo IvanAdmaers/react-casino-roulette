@@ -83,7 +83,7 @@ export const RouletteTable: FC<IRouletteTableProps> = ({
       const getPayload = () => {
         const firstId = payloadData.split('-')[0]
 
-        const isPayloadInConfig = hasOwn(config, firstId)
+        const isPayloadInConfig = hasOwn(config, firstId || '')
 
         if (isPayloadInConfig === true) {
           return config[firstId as keyof typeof config].map((item) => `${item}`)

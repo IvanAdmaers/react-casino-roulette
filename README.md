@@ -1,5 +1,7 @@
 # React Casino Roulette
 
+> Update: The author no longer maintains this package due to other projects. However, the package's architecture and code are easily scalable and clear, making it simple for anyone to modify the package as needed. I recommend switching to a fork of this package — https://github.com/dozsolti/react-casino-roulette. Its author, [@dozsolti](https://github.com/dozsolti), has fixed a few issues and improved upon my work.
+
 <div align="center">
   <a href="https://www.npmjs.com/package/react-casino-roulette">
     <img alt="npm version" src="https://img.shields.io/npm/v/react-casino-roulette" />
